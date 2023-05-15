@@ -115,6 +115,11 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 12px;
+}
+
+footer p{
+    text-align: center;
 }
 
 footer p:first-child{
