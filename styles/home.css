@@ -84,17 +84,27 @@
     align-items: center;
 }
 
+.sub_heading{
+    font-weight: 500;
+}
+
 .services_boxes{
-    width: 85%;
+    width: 80%;
     margin: 1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.service_box_main{
+    display: flex;
+    flex-direction: column;
 }
 
 .service_box{
-    width: 20rem;
+    width: 15rem;
     background: white;
     box-shadow: 10px 8px 14px #00000008;
     border-radius: 27px;
@@ -105,18 +115,20 @@
 }
 
 .service_box img{
-    width: 10rem;
+    width: 4.5rem;
 }
 
 .service_box div{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 5.6rem;
+    padding-bottom: 10px;
 }
 
 .service_box h2{
     padding-top: 10px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: var(--heading-black);
 }

@@ -167,3 +167,17 @@ footer p:last-child span{
     }
 }
 /* paragraph style end */
+
+/* sub description stat */
+.sub_description{
+    text-align: center;
+    width: 70%;
+    padding-bottom: 10px;
+}
+/* sub description end */
+
+/* sub heading start */
+.sub_heading{
+    text-align: left!important;
+}
+/* sub heading end */
