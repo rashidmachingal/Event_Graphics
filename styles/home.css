@@ -1,5 +1,6 @@
 /* landing page start */
-.landing_section{
+.landing_section {
+    margin-top: 1.5rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -7,7 +8,7 @@
     padding-bottom: 1rem;
 }
 
-.ls_left{
+.ls_left {
     width: 40%;
     height: 100%;
     display: flex;
@@ -16,50 +17,54 @@
     gap: 10px;
 }
 
-.ls_left h1{
+.ls_left h1 {
     font-size: 40px;
     line-height: 52px;
     color: var(--primary-blue);
 }
 
-.ls_left span{
-    color: #afafaf;
+.ls_left span {
+    color: #766563;
 }
 
-.ls_left button{
+.ls_left button {
     margin-top: 1rem;
     background: var(--primary-blue);
     color: white;
-    width: 10rem;
-    height: 2rem;
+    width: 9.5rem;
+    height: 2.7rem;
     font-size: 18px;
-    border-radius: 24px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
-.ls_right{
+.ls_right {
     height: 100%;
 }
 
-.ls_right img{
-    width: 24rem;
+.ls_right img {
+    width: 23rem;
+    margin-left: 1rem;
 }
 
 @media (max-width:803px) {
-    .landing_section{
+    .landing_section {
         margin-top: 0;
         flex-direction: column;
     }
-    .ls_left{
+
+    .ls_left {
         width: 100%;
         padding: 10px;
     }
-    .ls_left h1{
+
+    .ls_left h1 {
         font-size: 30px;
         line-height: 32px;
     }
-    .ls_right{
+
+    .ls_right {
         width: 100%;
         display: flex;
         align-items: center;
@@ -68,14 +73,15 @@
 }
 
 @media (max-width:600px) {
-    .ls_right img{
+    .ls_right img {
         width: 15rem;
     }
 }
+
 /* landing page end */
 
 /* services start */
-.services{
+.services {
     width: 100%;
     padding-bottom: 1rem;
     background: var(--grey-background);
@@ -84,11 +90,11 @@
     align-items: center;
 }
 
-.sub_heading{
+.sub_heading {
     font-weight: 500;
 }
 
-.services_boxes{
+.services_boxes {
     width: 80%;
     margin: 1rem;
     display: flex;
@@ -98,12 +104,12 @@
     padding-bottom: 0.5rem;
 }
 
-.service_box_main{
+.service_box_main {
     display: flex;
     flex-direction: column;
 }
 
-.service_box{
+.service_box {
     width: 15rem;
     background: white;
     box-shadow: 10px 8px 14px #00000008;
@@ -114,11 +120,11 @@
     justify-content: center;
 }
 
-.service_box img{
+.service_box img {
     width: 4.5rem;
 }
 
-.service_box div{
+.service_box div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,45 +132,132 @@
     padding-bottom: 10px;
 }
 
-.service_box h2{
+.service_box h2 {
     padding-top: 10px;
     font-size: 15px;
     font-weight: 600;
     color: var(--heading-black);
 }
 
-.service_box p{
+.service_box p {
     font-size: 13px;
 }
 
-.service_box hr{
-    border-top: 1px solid rgba(0,0,0,.1);
+.service_box hr {
+    border-top: 1px solid rgba(0, 0, 0, .1);
 }
+
 /* services end */
 
 /* about section start */
-.about{
+.about {
     width: 100%;
     padding-bottom: 1rem;
+    background: url(https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/h1_bg-2.jpg);
 }
-/* about section end */
 
-/* catalogue start */
-.catalogue{
+.paragraph_container{
+    margin-top: 1rem;
     width: 100%;
-    height: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: var(--primary-blue);
+    gap: 3rem;
 }
 
-.catalogue button{
-    border: none;
-    padding: 0.6rem;
-    cursor: pointer;
-    background: var(--primary-blue);
-    border: 2px solid white;
-    color: white;
+.paragraph_container img{
+    width: 350px;
+    border-radius: 10px;
 }
-/* catalogue start */
+
+.paragraph{
+    width: 600px;
+}
+
+@media (max-width:1000px) {
+    .paragraph_container{
+        flex-direction: column;
+    }
+    .paragraph_container img{
+        width: 95%;
+    }
+    .paragraph{
+        width: 95%;
+    }
+}
+
+/* about section end */
+
+/* image gallery start */
+.image-gallery {
+    background: var(--grey-background);
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+}
+
+.image-gallery img {
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px #00000017;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+    .image-gallery{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .image-gallery{
+        padding: 0;
+    }
+}
+
+/* image gallery end */
+
+/* page style */
+.page_container{
+    margin-top: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    background: url(https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/h1_bg-2.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.page_container p{
+    text-align: center;
+}
+/* page style */

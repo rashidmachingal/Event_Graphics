@@ -1,2 +1,2 @@
 # Creative_Graphics
-Creative Graphics static website
+Event Graphics static website
