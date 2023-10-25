@@ -1,42 +1,56 @@
 /* landing page start */
+.landing_main{
+    background-image: url('/images/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.landing_inner{
+    width: 100%;
+    height: 70vh;
+    background: #36676376;
+}
+
 .landing_section {
-    margin-top: 1.5rem;
+    margin-top: 5rem;
     width: 100%;
     display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    padding-bottom: 1rem;
-}
-
-.ls_left {
-    width: 40%;
-    height: 100%;
-    display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 2rem;
 }
 
-.ls_left h1 {
+.landing_section h1 {
     font-size: 40px;
     line-height: 52px;
-    color: var(--primary-blue);
+    color: white;
+    text-shadow: 1px 1px var(--primary-blue);
+    text-align: center;
 }
 
-.ls_left span {
-    color: #766563;
+.landing_section span {
+    color: white;
 }
 
-.ls_left button {
+.landing_section button {
     margin-top: 1rem;
-    background: var(--primary-blue);
+    background: #3c8b84;
     color: white;
     width: 9.5rem;
     height: 2.7rem;
     font-size: 18px;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+}
+
+.landing_section a{
+    width: 9.5rem;
+}
+
+.landing_section p{
+    color: white;
 }
 
 .ls_right {
@@ -49,26 +63,23 @@
 }
 
 @media (max-width:803px) {
+    .landing_main{
+        height: 25rem;
+    }
+    .landing_inner{
+        height: 25rem;
+    }
     .landing_section {
         margin-top: 0;
         flex-direction: column;
     }
-
-    .ls_left {
+    .landing_section {
         width: 100%;
         padding: 10px;
     }
-
-    .ls_left h1 {
-        font-size: 30px;
+    .landing_section h1 {
+        font-size: 25px;
         line-height: 32px;
-    }
-
-    .ls_right {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 }
 
@@ -113,7 +124,7 @@
     width: 15rem;
     background: white;
     box-shadow: 10px 8px 14px #00000008;
-    border-radius: 27px;
+    border-radius: 8px;
     display: flex;
     padding: 1rem;
     flex-direction: column;
@@ -201,6 +212,11 @@
     box-shadow: 0 0 5px 1px #00000017;
 }
 
+.image-gallery p{
+    text-align: center;
+    color: gray;
+}
+
 .row {
     display: -ms-flexbox;
     display: flex;
@@ -222,42 +238,102 @@
     width: 100%;
 }
 
+.work_gallery{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.work_card{
+    width: 16rem;
+}
+
+.work_card img{
+    height: 11rem;
+}
+
+.work_card div{
+    padding: 10px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 10px 8px 14px #00000008;
+    border: 1px solid lightgray;
+}
+
+.work_card img{
+    border-bottom-right-radius: 0px!important;
+    border-bottom-left-radius: 0px!important;
+}
+
+.work_card h3{
+    color: grey;
+    font-weight: 500;
+}
+
 @media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
     .image-gallery{
         padding: 0;
     }
-}
-
-@media screen and (max-width: 600px) {
+    .work_gallery{
+        padding: 0;
+    }
+    .work_card{
+        width: 90%;
+    }
     .column {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
-    .image-gallery{
-        padding: 0;
+}
+/* image gallery end */
+
+.video-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+
+.video-section video{
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 2px solid #d3d3d3cb;
+}
+
+@media screen and (max-width: 800px) {
+    .video-section video{
+        width: 95%;
     }
 }
 
-/* image gallery end */
-
 /* page style */
-.page_container{
-    margin-top: 1rem;
-    padding-bottom: 2rem;
-    width: 100%;
-    background: url(https://demo2.pavothemes.com/printec/wp-content/uploads/2023/02/h1_bg-2.jpg);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.page_container_main{
+    background-image: url('/images/bg.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 30vh;
 }
 
-.page_container p{
-    text-align: center;
+.page_container{
+    width: 100%;
+    height: 30vh;
+    background: #36676376;
 }
+
+.page_container_title h2{
+    color: white;
+}
+
+.page_container_title p{
+    text-align: center;
+    color: white;
+}
+
 /* page style */
