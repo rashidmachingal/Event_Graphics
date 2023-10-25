@@ -296,22 +296,15 @@
 }
 /* image gallery end */
 
-.video-section{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 1rem;
-}
 
-.video-section video{
+video{
     margin-top: 1rem;
     border-radius: 8px;
     border: 2px solid #d3d3d3cb;
 }
 
 @media screen and (max-width: 800px) {
-    .video-section video{
+    video{
         width: 95%;
     }
 }
