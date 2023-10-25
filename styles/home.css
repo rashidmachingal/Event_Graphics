@@ -297,14 +297,14 @@
 /* image gallery end */
 
 
-video{
+.about video{
     margin-top: 1rem;
     border-radius: 8px;
     border: 2px solid #d3d3d3cb;
 }
 
 @media screen and (max-width: 800px) {
-    video{
+    .about video{
         width: 95%;
     }
 }
