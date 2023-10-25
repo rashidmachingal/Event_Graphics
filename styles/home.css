@@ -285,6 +285,9 @@
     .work_card{
         width: 90%;
     }
+    .work_card img{
+        height: auto;
+    }
     .column {
         -ms-flex: 100%;
         flex: 100%;
