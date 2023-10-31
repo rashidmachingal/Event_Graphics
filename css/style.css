@@ -629,9 +629,6 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type=submit]:hover {
-  background: #6ec083;
-}
 
 @keyframes animate-loading {
   0% {
